@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1F01D691C9AA899009C41DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D681C9AA899009C41DF /* main.m */; };
+		F1F01D6C1C9AA899009C41DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D6B1C9AA899009C41DF /* AppDelegate.m */; };
+		F1F01D6F1C9AA899009C41DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D6E1C9AA899009C41DF /* ViewController.m */; };
+		F1F01D721C9AA899009C41DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F01D701C9AA899009C41DF /* Main.storyboard */; };
+		F1F01D741C9AA899009C41DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F01D731C9AA899009C41DF /* Assets.xcassets */; };
+		F1F01D771C9AA899009C41DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F01D751C9AA899009C41DF /* LaunchScreen.storyboard */; };
+		F1F01D821C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D811C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.m */; };
+		F1F01D8D1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D8C1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.m */; };
+		F1F01D9D1C9AA930009C41DF /* DMLinkAgeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D9C1C9AA930009C41DF /* DMLinkAgeScrollView.m */; };
+		F1F01DA01C9AC3C5009C41DF /* DMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D9F1C9AC3C5009C41DF /* DMScrollView.m */; };
+		F1F01DA21C9BA455009C41DF /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F01DA11C9BA455009C41DF /* pic.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1F01D7E1C9AA899009C41DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F01D5C1C9AA899009C41DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1F01D631C9AA899009C41DF;
+			remoteInfo = DMLinkAgeScrollViewDemo;
+		};
+		F1F01D891C9AA899009C41DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F01D5C1C9AA899009C41DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1F01D631C9AA899009C41DF;
+			remoteInfo = DMLinkAgeScrollViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1F01D641C9AA899009C41DF /* DMLinkAgeScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMLinkAgeScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F01D681C9AA899009C41DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1F01D6A1C9AA899009C41DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1F01D6B1C9AA899009C41DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1F01D6D1C9AA899009C41DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1F01D6E1C9AA899009C41DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1F01D711C9AA899009C41DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1F01D731C9AA899009C41DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1F01D761C9AA899009C41DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1F01D781C9AA899009C41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F01D7D1C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMLinkAgeScrollViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F01D811C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMLinkAgeScrollViewDemoTests.m; sourceTree = "<group>"; };
+		F1F01D831C9AA899009C41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F01D881C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMLinkAgeScrollViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F01D8C1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMLinkAgeScrollViewDemoUITests.m; sourceTree = "<group>"; };
+		F1F01D8E1C9AA899009C41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F01D9B1C9AA930009C41DF /* DMLinkAgeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLinkAgeScrollView.h; sourceTree = "<group>"; };
+		F1F01D9C1C9AA930009C41DF /* DMLinkAgeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLinkAgeScrollView.m; sourceTree = "<group>"; };
+		F1F01D9E1C9AC3C5009C41DF /* DMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMScrollView.h; sourceTree = "<group>"; };
+		F1F01D9F1C9AC3C5009C41DF /* DMScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScrollView.m; sourceTree = "<group>"; };
+		F1F01DA11C9BA455009C41DF /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F01D611C9AA899009C41DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F01D7A1C9AA899009C41DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F01D851C9AA899009C41DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1F01D5B1C9AA899009C41DF = {
+			isa = PBXGroup;
+			children = (
+				F1F01D9A1C9AA8AB009C41DF /* DMLinkAgeScrollView */,
+				F1F01D661C9AA899009C41DF /* DMLinkAgeScrollViewDemo */,
+				F1F01D801C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests */,
+				F1F01D8B1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests */,
+				F1F01D651C9AA899009C41DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F01D651C9AA899009C41DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F01D641C9AA899009C41DF /* DMLinkAgeScrollViewDemo.app */,
+				F1F01D7D1C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.xctest */,
+				F1F01D881C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F01D661C9AA899009C41DF /* DMLinkAgeScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1F01DA11C9BA455009C41DF /* pic.png */,
+				F1F01D9E1C9AC3C5009C41DF /* DMScrollView.h */,
+				F1F01D9F1C9AC3C5009C41DF /* DMScrollView.m */,
+				F1F01D6A1C9AA899009C41DF /* AppDelegate.h */,
+				F1F01D6B1C9AA899009C41DF /* AppDelegate.m */,
+				F1F01D6D1C9AA899009C41DF /* ViewController.h */,
+				F1F01D6E1C9AA899009C41DF /* ViewController.m */,
+				F1F01D701C9AA899009C41DF /* Main.storyboard */,
+				F1F01D731C9AA899009C41DF /* Assets.xcassets */,
+				F1F01D751C9AA899009C41DF /* LaunchScreen.storyboard */,
+				F1F01D781C9AA899009C41DF /* Info.plist */,
+				F1F01D671C9AA899009C41DF /* Supporting Files */,
+			);
+			path = DMLinkAgeScrollViewDemo;
+			sourceTree = "<group>";
+		};
+		F1F01D671C9AA899009C41DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1F01D681C9AA899009C41DF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1F01D801C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1F01D811C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.m */,
+				F1F01D831C9AA899009C41DF /* Info.plist */,
+			);
+			path = DMLinkAgeScrollViewDemoTests;
+			sourceTree = "<group>";
+		};
+		F1F01D8B1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1F01D8C1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.m */,
+				F1F01D8E1C9AA899009C41DF /* Info.plist */,
+			);
+			path = DMLinkAgeScrollViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		F1F01D9A1C9AA8AB009C41DF /* DMLinkAgeScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F1F01D9B1C9AA930009C41DF /* DMLinkAgeScrollView.h */,
+				F1F01D9C1C9AA930009C41DF /* DMLinkAgeScrollView.m */,
+			);
+			name = DMLinkAgeScrollView;
+			path = ../DMLinkAgeScrollView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F01D631C9AA899009C41DF /* DMLinkAgeScrollViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F01D911C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemo" */;
+			buildPhases = (
+				F1F01D601C9AA899009C41DF /* Sources */,
+				F1F01D611C9AA899009C41DF /* Frameworks */,
+				F1F01D621C9AA899009C41DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMLinkAgeScrollViewDemo;
+			productName = DMLinkAgeScrollViewDemo;
+			productReference = F1F01D641C9AA899009C41DF /* DMLinkAgeScrollViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1F01D7C1C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F01D941C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemoTests" */;
+			buildPhases = (
+				F1F01D791C9AA899009C41DF /* Sources */,
+				F1F01D7A1C9AA899009C41DF /* Frameworks */,
+				F1F01D7B1C9AA899009C41DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1F01D7F1C9AA899009C41DF /* PBXTargetDependency */,
+			);
+			name = DMLinkAgeScrollViewDemoTests;
+			productName = DMLinkAgeScrollViewDemoTests;
+			productReference = F1F01D7D1C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1F01D871C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F01D971C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemoUITests" */;
+			buildPhases = (
+				F1F01D841C9AA899009C41DF /* Sources */,
+				F1F01D851C9AA899009C41DF /* Frameworks */,
+				F1F01D861C9AA899009C41DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1F01D8A1C9AA899009C41DF /* PBXTargetDependency */,
+			);
+			name = DMLinkAgeScrollViewDemoUITests;
+			productName = DMLinkAgeScrollViewDemoUITests;
+			productReference = F1F01D881C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F01D5C1C9AA899009C41DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Dream;
+				TargetAttributes = {
+					F1F01D631C9AA899009C41DF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F1F01D7C1C9AA899009C41DF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F1F01D631C9AA899009C41DF;
+					};
+					F1F01D871C9AA899009C41DF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F1F01D631C9AA899009C41DF;
+					};
+				};
+			};
+			buildConfigurationList = F1F01D5F1C9AA899009C41DF /* Build configuration list for PBXProject "DMLinkAgeScrollViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1F01D5B1C9AA899009C41DF;
+			productRefGroup = F1F01D651C9AA899009C41DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F01D631C9AA899009C41DF /* DMLinkAgeScrollViewDemo */,
+				F1F01D7C1C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests */,
+				F1F01D871C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F01D621C9AA899009C41DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F01D771C9AA899009C41DF /* LaunchScreen.storyboard in Resources */,
+				F1F01D741C9AA899009C41DF /* Assets.xcassets in Resources */,
+				F1F01DA21C9BA455009C41DF /* pic.png in Resources */,
+				F1F01D721C9AA899009C41DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F01D7B1C9AA899009C41DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F01D861C9AA899009C41DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F01D601C9AA899009C41DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F01DA01C9AC3C5009C41DF /* DMScrollView.m in Sources */,
+				F1F01D6F1C9AA899009C41DF /* ViewController.m in Sources */,
+				F1F01D6C1C9AA899009C41DF /* AppDelegate.m in Sources */,
+				F1F01D9D1C9AA930009C41DF /* DMLinkAgeScrollView.m in Sources */,
+				F1F01D691C9AA899009C41DF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F01D791C9AA899009C41DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F01D821C9AA899009C41DF /* DMLinkAgeScrollViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F01D841C9AA899009C41DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F01D8D1C9AA899009C41DF /* DMLinkAgeScrollViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1F01D7F1C9AA899009C41DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1F01D631C9AA899009C41DF /* DMLinkAgeScrollViewDemo */;
+			targetProxy = F1F01D7E1C9AA899009C41DF /* PBXContainerItemProxy */;
+		};
+		F1F01D8A1C9AA899009C41DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1F01D631C9AA899009C41DF /* DMLinkAgeScrollViewDemo */;
+			targetProxy = F1F01D891C9AA899009C41DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1F01D701C9AA899009C41DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F01D711C9AA899009C41DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1F01D751C9AA899009C41DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F01D761C9AA899009C41DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1F01D8F1C9AA899009C41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1F01D901C9AA899009C41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F01D921C9AA899009C41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DMLinkAgeScrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidian.DMLinkAgeScrollViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1F01D931C9AA899009C41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DMLinkAgeScrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidian.DMLinkAgeScrollViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1F01D951C9AA899009C41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DMLinkAgeScrollViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidian.DMLinkAgeScrollViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMLinkAgeScrollViewDemo.app/DMLinkAgeScrollViewDemo";
+			};
+			name = Debug;
+		};
+		F1F01D961C9AA899009C41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DMLinkAgeScrollViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidian.DMLinkAgeScrollViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMLinkAgeScrollViewDemo.app/DMLinkAgeScrollViewDemo";
+			};
+			name = Release;
+		};
+		F1F01D981C9AA899009C41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DMLinkAgeScrollViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidian.DMLinkAgeScrollViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DMLinkAgeScrollViewDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F1F01D991C9AA899009C41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DMLinkAgeScrollViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidian.DMLinkAgeScrollViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DMLinkAgeScrollViewDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F01D5F1C9AA899009C41DF /* Build configuration list for PBXProject "DMLinkAgeScrollViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F01D8F1C9AA899009C41DF /* Debug */,
+				F1F01D901C9AA899009C41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F01D911C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F01D921C9AA899009C41DF /* Debug */,
+				F1F01D931C9AA899009C41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1F01D941C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F01D951C9AA899009C41DF /* Debug */,
+				F1F01D961C9AA899009C41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1F01D971C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F01D981C9AA899009C41DF /* Debug */,
+				F1F01D991C9AA899009C41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1F01D5C1C9AA899009C41DF /* Project object */;
+}
