@@ -72,6 +72,8 @@
     }
     
     self.m_topView.frame = (CGRect){0, 0, viewWidth, self.m_topHeight};
+    
+    self.m_bodyView.layer.masksToBounds = NO;
 }
 
 - (void)loadData
@@ -102,7 +104,7 @@
 
 - (void)adjustSubViewsWithOffsetY:(CGFloat)offsetY
 {
-    NSLog(@"offsetY = %@", @(offsetY));
+//    NSLog(@"offsetY = %@", @(offsetY));
     
     if (offsetY < -self.m_topHeight)
     {

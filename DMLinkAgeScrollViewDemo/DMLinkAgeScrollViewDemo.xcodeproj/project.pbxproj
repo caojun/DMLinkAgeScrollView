@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F19C89B91CA8D41200EF8866 /* DMLinkTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C89B81CA8D41200EF8866 /* DMLinkTableView.m */; };
+		F19C89BC1CA8DC8400EF8866 /* DMLinkBodyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C89BB1CA8DC8400EF8866 /* DMLinkBodyScrollView.m */; };
 		F1F01D691C9AA899009C41DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D681C9AA899009C41DF /* main.m */; };
 		F1F01D6C1C9AA899009C41DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D6B1C9AA899009C41DF /* AppDelegate.m */; };
 		F1F01D6F1C9AA899009C41DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F01D6E1C9AA899009C41DF /* ViewController.m */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F19C89B71CA8D41200EF8866 /* DMLinkTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLinkTableView.h; sourceTree = "<group>"; };
+		F19C89B81CA8D41200EF8866 /* DMLinkTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLinkTableView.m; sourceTree = "<group>"; };
+		F19C89BA1CA8DC8400EF8866 /* DMLinkBodyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLinkBodyScrollView.h; sourceTree = "<group>"; };
+		F19C89BB1CA8DC8400EF8866 /* DMLinkBodyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLinkBodyScrollView.m; sourceTree = "<group>"; };
 		F1F01D641C9AA899009C41DF /* DMLinkAgeScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMLinkAgeScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F01D681C9AA899009C41DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1F01D6A1C9AA899009C41DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 		F1F01D661C9AA899009C41DF /* DMLinkAgeScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F19C89B71CA8D41200EF8866 /* DMLinkTableView.h */,
+				F19C89B81CA8D41200EF8866 /* DMLinkTableView.m */,
 				F1F01DA11C9BA455009C41DF /* pic.png */,
 				F1F01D9E1C9AC3C5009C41DF /* DMScrollView.h */,
 				F1F01D9F1C9AC3C5009C41DF /* DMScrollView.m */,
@@ -157,6 +165,8 @@
 			children = (
 				F1F01D9B1C9AA930009C41DF /* DMLinkAgeScrollView.h */,
 				F1F01D9C1C9AA930009C41DF /* DMLinkAgeScrollView.m */,
+				F19C89BA1CA8DC8400EF8866 /* DMLinkBodyScrollView.h */,
+				F19C89BB1CA8DC8400EF8866 /* DMLinkBodyScrollView.m */,
 			);
 			name = DMLinkAgeScrollView;
 			path = ../DMLinkAgeScrollView;
@@ -293,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19C89B91CA8D41200EF8866 /* DMLinkTableView.m in Sources */,
 				F1F01DA01C9AC3C5009C41DF /* DMScrollView.m in Sources */,
 				F1F01D6F1C9AA899009C41DF /* ViewController.m in Sources */,
 				F1F01D6C1C9AA899009C41DF /* AppDelegate.m in Sources */,
+				F19C89BC1CA8DC8400EF8866 /* DMLinkBodyScrollView.m in Sources */,
 				F1F01D9D1C9AA930009C41DF /* DMLinkAgeScrollView.m in Sources */,
 				F1F01D691C9AA899009C41DF /* main.m in Sources */,
 			);
@@ -523,6 +535,7 @@
 				F1F01D931C9AA899009C41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F01D941C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +544,7 @@
 				F1F01D961C9AA899009C41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F01D971C9AA899009C41DF /* Build configuration list for PBXNativeTarget "DMLinkAgeScrollViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +553,7 @@
 				F1F01D991C9AA899009C41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

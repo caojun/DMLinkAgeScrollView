@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DMLinkAgeScrollView.h"
 #import "DMScrollView.h"
+#import "DMLinkTableView.h"
 
 #define MAIN_SCR_W              ([UIScreen mainScreen].bounds.size.width)
 #define MAIN_SCR_H              ([UIScreen mainScreen].bounds.size.height)
@@ -29,12 +30,14 @@
     [super viewDidLoad];
     
     CGRect frame = [UIScreen mainScreen].bounds;
-//    DMLinkAgeScrollView *view = [[DMLinkAgeScrollView alloc] initWithFrame:frame];
-//    [self.view addSubview:view];
-//    view.dataSource = self;
-//    self.m_linkAgeView = view;
-//    view.backgroundColor = [UIColor clearColor];
     
+#if 1
+    DMLinkAgeScrollView *view = [[DMLinkAgeScrollView alloc] initWithFrame:frame];
+    [self.view addSubview:view];
+    view.dataSource = self;
+    self.m_linkAgeView = view;
+    view.backgroundColor = [UIColor clearColor];
+#else
     frame.origin.y = 100;
     frame.size.height -= frame.origin.y;
     UITableView *tableView = [[UITableView alloc] initWithFrame:frame];
@@ -44,9 +47,8 @@
     tableView.layer.masksToBounds = NO;
     tableView.backgroundView = nil;
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    
     self.m_tableView = tableView;
+#endif
     
     self.view.backgroundColor = [UIColor whiteColor];
 }
@@ -55,19 +57,19 @@
 {
     [super touchesBegan:touches withEvent:event];
     
-    UIView *view = self.m_tableView.subviews.firstObject;
-    NSLog(@"%@", view);
-    NSLog(@"%@", @(view.layer.masksToBounds));
-    NSLog(@"%@", @(view.clipsToBounds));
-    
-    NSLog(@"%@", self.m_tableView);
-    NSLog(@"%@", @(view.layer.masksToBounds));
-    
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    UITableViewCell *cell = [self.m_tableView cellForRowAtIndexPath:indexPath];
-    NSLog(@"%@", cell.superview);
-    NSLog(@"%@", cell.superview.superview);
-    NSLog(@"%@", cell.superview.superview.superview);
+//    UIView *view = self.m_tableView.subviews.firstObject;
+//    NSLog(@"%@", view);
+//    NSLog(@"%@", @(view.layer.masksToBounds));
+//    NSLog(@"%@", @(view.clipsToBounds));
+//    
+//    NSLog(@"%@", self.m_tableView);
+//    NSLog(@"%@", @(view.layer.masksToBounds));
+//    
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//    UITableViewCell *cell = [self.m_tableView cellForRowAtIndexPath:indexPath];
+//    NSLog(@"%@", cell.superview);
+//    NSLog(@"%@", cell.superview.superview);
+//    NSLog(@"%@", cell.superview.superview.superview);
 }
 
 
@@ -96,14 +98,11 @@
 
 - (nonnull UIScrollView *)linkAgeScrollViewBodyView:(DMLinkAgeScrollView *)view
 {
-#if 1
-    UITableView *tableView = [[UITableView alloc] init];
+#if 0
+    UITableView *tableView = [[DMLinkTableView alloc] init];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.layer.masksToBounds = NO;
-    tableView.backgroundView = [[UIView alloc] init];
-    tableView.backgroundView.backgroundColor = [UIColor clearColor];
-    tableView.backgroundView.layer.masksToBounds = NO;
     
     return tableView;
 #else
@@ -117,11 +116,54 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:imageFrame];
     imageView.image = [UIImage imageNamed:@"pic"];
     imageView.backgroundColor = [UIColor redColor];
-    [scrollView addSubview:imageView];
     imageView.userInteractionEnabled = YES;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewTap)];
     [imageView addGestureRecognizer:tap];
+    
+    CGRect tableFrame = {0, 0, MAIN_SCR_W, MAIN_SCR_H - TopViewHeight};
+    UITableView *tableView = [[DMLinkTableView alloc] initWithFrame:tableFrame];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+//    tableView.userInteractionEnabled = NO;
+    
+//    [scrollView addSubview:imageView];
+    [scrollView addSubview:tableView];
+    CGFloat contentHeight = 0;
+    NSInteger numberSection = 1;
+    if ([tableView.dataSource respondsToSelector:@selector(numberOfSectionsInTableView:)])
+    {
+        numberSection = [tableView.dataSource numberOfSectionsInTableView:tableView];
+    }
+    
+    for (NSInteger i=0; i<numberSection; i++)
+    {
+        if ([tableView.delegate respondsToSelector:@selector(tableView:heightForHeaderInSection:)])
+        {
+            contentHeight += [tableView.delegate tableView:tableView heightForHeaderInSection:i];
+        }
+        
+        if ([tableView.delegate respondsToSelector:@selector(tableView:heightForFooterInSection:)])
+        {
+            contentHeight += [tableView.delegate tableView:tableView heightForFooterInSection:i];
+        }
+        
+        NSInteger row = [tableView.dataSource tableView:tableView numberOfRowsInSection:i];
+        for (NSInteger j=0; j<row; j++)
+        {
+            if ([tableView.delegate respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)])
+            {
+                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:j inSection:i];
+                contentHeight += [tableView.delegate tableView:tableView heightForRowAtIndexPath:indexPath];
+            }
+            else
+            {
+                contentHeight += 44;
+            }
+        }
+    }
+    
+    scrollView.contentSize = CGSizeMake(MAIN_SCR_W, contentHeight);
     
     return scrollView;
 #endif
